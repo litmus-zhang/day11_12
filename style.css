@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+:root{
+    --primary-color: hsl(25, 97%, 53%);
+    --Neutral-white: hsl(0, 0%, 100%);
+    --Neutral-light-grey: hsla(217, 12%, 63%);
+    --Neutral-medium-grey: hsl(216, 12%, 54%, 0.2);
+    --Dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+*{
+    box-sizing: border-box;
+   
+}
+body {
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--very-dark-blue);
+  }
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 450px;
+    height: 450px ;
+    margin: auto;
+    padding: 2rem;
+    background-color: var(--Dark-blue);
+    border-radius: 25px;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+}
+
+.top p{
+    color: var(--Neutral-light-grey);
+    font-weight: 400;
+    opacity: 0.5;
+    font-size: 1rem;
+}
+h1{
+ color: var(--Neutral-white);
+ margin: 0;
+ padding-top: 2rem;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.star{
+    background-color: transparent;
+}
+.bottom .circles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+
+}
+
+
+ .circle{
+    width: 3rem;
+    height: 3rem;
+    padding: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--Neutral-medium-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--Neutral-white);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.circle:hover{
+    background-color: var(--Neutral-light-grey);
+}
+
+.circle.clicked{
+    background-color: var(--primary-color);
+}
+.bottom button{
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    font-weight: 700;
+    border-radius: 9999px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.Thank-you{
+width : 60%;
+height : 80%;
+object-fit: cover;
+}
+.rating-value{
+    padding: 0.6em;
+    width: fit-content;
+    background-color: var(--Neutral-medium-grey);
+    border-radius: 20px;
+    color: var(--Neutral-white);
+}
+.thank-you{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.thank-you p{
+    color: var(--Neutral-light-grey);
+    font-weight: 400;
+    opacity: 0.5;
+    font-size: 1rem;
+}
